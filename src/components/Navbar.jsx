@@ -67,7 +67,8 @@ const Navbar = () => {
   const [bensonOpen, setBensonOpen] = useState(false);
 
   return (
-    <div className="intro-content">
+    <div className="top-intro">
+      <div className="intro-content">
 
       {/* LEFT LOGO */}
       {/* <div className="intro-left">
@@ -88,11 +89,13 @@ const Navbar = () => {
 
 <div className="intro-left">
 
-  <img
-    src={logo}
-    alt="Waterfront Logo"
-    className="waterfront-logo"
-  />
+  <Link to="/">
+    <img
+      src={logo}
+      alt="Waterfront Logo"
+      className="waterfront-logo"
+    />
+  </Link>
 
 </div>
       {/* RIGHT SIDE */}
@@ -140,6 +143,7 @@ const Navbar = () => {
 
       </div>
 
+      </div>
     </div>
   );
 };

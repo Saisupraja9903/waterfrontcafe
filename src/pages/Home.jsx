@@ -20,6 +20,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import HoursBanner from "../components/HoursBanner";
 import AboutSection from "../components/AboutSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -71,9 +72,7 @@ const Home = () => {
           showNavbar ? "navbar-show" : "navbar-hide"
         }`}
       >
-        <div className="top-intro">
-          <Navbar />
-        </div>
+        <Navbar />
       </header>
 
       {/* HERO */}
@@ -90,6 +89,8 @@ const Home = () => {
       <section className="about-section-wrapper">
         <AboutSection />
       </section>
+
+      {/* <Footer /> */}
 
     </main>
   );
