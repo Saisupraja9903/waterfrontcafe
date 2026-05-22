@@ -82,9 +82,9 @@ const Home = () => {
       </section>
 
       {/* HOURS */}
-      <section className="hours-section">
+      {/* <section className="hours-section">
         <HoursBanner />
-      </section>
+      </section> */}
 
       {/* ABOUT */}
       <section className="about-section-wrapper">

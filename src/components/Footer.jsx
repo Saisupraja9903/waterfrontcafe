@@ -3,12 +3,42 @@ import { FaInstagram, FaFacebook, FaTripadvisor, FaGoogle } from "react-icons/fa
 const Footer = () => {
   return (
     <footer className="footer">
-
       <div className="footer-wave">
-        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0,40 C360,80 1080,0 1440,40 L1440,0 L0,0 Z" fill="#faf7f2" />
-        </svg>
-      </div>
+  <svg
+    viewBox="0 0 1440 160"
+    preserveAspectRatio="none"
+  >
+
+    {/* LIGHT TOP CURVE */}
+    <path
+      d="
+        M0,110
+        C180,40 360,40 540,95
+        C720,150 900,150 1080,95
+        C1260,40 1350,40 1440,90
+        L1440,0
+        L0,0
+        Z
+      "
+      fill="rgba(120,170,190,0.45)"
+    />
+
+    {/* DARK FRONT CURVE */}
+    <path
+      d="
+        M0,125
+        C220,60 420,60 620,120
+        C820,175 1020,175 1220,120
+        C1340,85 1400,85 1440,105
+        L1440,160
+        L0,160
+        Z
+      "
+      fill="#004b63"
+    />
+
+  </svg>
+</div>
 
       <div className="footer-content">
 
