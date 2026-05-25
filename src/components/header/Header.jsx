@@ -29,7 +29,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [dropdown, setDropdown] = useState(null);
-  const [dropdownHover, setDropdownHover] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(null);
   const lastScrollY = useRef(0);
@@ -116,8 +115,6 @@ useEffect(() => {
                 cls["header-dropdown"] +
                 (dropdown === link.label ? " " + cls.open : "")
               }
-              onMouseEnter={() => setDropdownHover(true)}
-              onMouseLeave={() => setDropdownHover(false)}
             >
               {link.items.map((item) => (
                 <NavLink
