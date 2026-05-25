@@ -17,7 +17,7 @@
   --dropdown-active: #2962ff;
   --logo-width-desktop: 220px;
   --logo-width-tablet: 150px;
-  --logo-width-mobile: 110px;
+  --logo-width-mobile: 80px;
   --nav-gap-desktop: 70px;
   --nav-gap-tablet: 40px;
   --dropdown-width: 360px;
@@ -84,6 +84,7 @@
   padding: 0 48px 0 48px;
   position: relative;
   height: 100%;
+  z-index: 5000;
 }
 
 .header-bg-texture {
@@ -104,14 +105,35 @@
   100% { background-position-x: 600px; }
 }
 
+.header-left-group {
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.mobile-back-button {
+  display: none;
+}
+
 .header-logo {
   width: var(--logo-width-desktop);
   min-width: var(--logo-width-desktop);
   margin-right: 48px;
-  margin-bottom: 18px;
+  margin-bottom: 26px; /* Increased to move the logo slightly up */
   align-self: flex-end;
   z-index: 2;
   transition: width 0.35s cubic-bezier(0.22,1,0.36,1);
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Target the image directly to strip global image borders */
+.header-logo img {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  display: block;
 }
 
 .header-heading {
@@ -248,7 +270,7 @@
   position: absolute;
   right: 32px;
   top: 32px;
-  z-index: 3000;
+  z-index: 5000;
   width: 48px;
   height: 48px;
   background: rgba(255,255,255,0.42);
@@ -356,7 +378,10 @@
 /* Responsive */
 @media (max-width: 1199px) {
   .header-inner {
-    padding: 0 24px 0 24px;
+    padding: 0 32px;
+  }
+  .header-left-group {
+    align-items: center;
   }
   .header-logo {
     width: var(--logo-width-tablet);
@@ -366,77 +391,77 @@
   .header-heading {
     font-size: var(--heading-size-tablet);
     top: 24px;
-    right: 24px;
+    right: 32px;
     left: auto;
-    transform: scale(1.01);
   }
   .header-nav {
     gap: var(--nav-gap-tablet);
+    right: 0;
   }
 }
 
-@media (max-width: 900px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 12px;
-    min-height: 0;
-  }
-  .header-logo {
-    margin-bottom: 0;
-  }
-  .header-heading {
-    position: static;
-    transform: none;
-    margin: 18px 0 0 0;
-    left: unset;
-    top: unset;
-    white-space: normal;
-    text-align: right;
-    align-self: flex-end;
-  }
-  .header-nav {
-    margin-bottom: 0;
-    margin-left: 0;
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .header {
-    min-height: auto;
-    padding-bottom: 0;
+    min-height: var(--header-height-scrolled);
   }
   .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 8px;
-    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    min-height: 90px;
+  }
+  .header-left-group {
+    gap: 12px;
+  }
+  .mobile-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.42);
+    border: 1px solid rgba(0, 63, 84, 0.18);
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: var(--header-link);
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 0;
   }
   .header-logo {
-    width: var(--logo-width-mobile);
-    min-width: var(--logo-width-mobile);
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0;
+    width: var(--logo-width-tablet);
+    min-width: var(--logo-width-tablet);
   }
   .header-heading {
-    font-size: var(--heading-size-mobile);
-    margin: 12px 0 0 0;
-    left: unset;
-    top: unset;
-    transform: none;
-    position: static;
-    white-space: normal;
-    text-align: right;
-    align-self: flex-end;
+    display: none;
   }
   .header-nav {
     display: none;
   }
   .hamburger {
     display: flex;
+    position: relative;
+    top: auto;
+    right: auto;
   }
   .mobile-nav {
     display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 0 16px;
+  }
+  .header-logo {
+    width: var(--logo-width-mobile);
+    min-width: var(--logo-width-mobile);
+  }
+  .hamburger {
+    width: 44px;
+    height: 44px;
+    font-size: 1.8rem;
   }
 }

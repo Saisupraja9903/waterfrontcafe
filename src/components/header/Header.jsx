@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { FiMenu, FiX, FiChevronDown, FiChevronLeft } from "react-icons/fi";
 import cls from "./Header.module.css";
 import logo from "../../assets/logo.png";
 
@@ -34,6 +34,7 @@ const Header = () => {
   const lastScrollY = useRef(0);
   const closeTimeout = useRef();
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Scroll effect for header hide/show
  // Scroll effect only for Home page
@@ -148,6 +149,11 @@ useEffect(() => {
   const renderMobileNav = () => (
     <nav className={cls["mobile-nav"] + (mobileOpen ? " " + cls.open : "")}
       aria-label="Mobile navigation"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          setMobileOpen(false);
+        }
+      }}
     >
       {menuLinks.map((link) =>
         link.items ? (
@@ -207,9 +213,20 @@ useEffect(() => {
     >
       <div className={cls["header-bg-texture"]} aria-hidden="true" />
       <div className={cls["header-inner"]}>
-        <Link to="/" className={cls["header-logo"]} aria-label="Waterfront Cafe home">
-          <img src={logo} alt="Waterfront Cafe Bar Bistro" style={{ width: "100%" }} />
-        </Link>
+        <div className={cls["header-left-group"]}>
+          {location.pathname !== "/" && (
+            <button
+              className={cls["mobile-back-button"]}
+              onClick={() => navigate(-1)}
+              aria-label="Go back"
+            >
+              <FiChevronLeft />
+            </button>
+          )}
+          <Link to="/" className={cls["header-logo"]} aria-label="Waterfront Cafe home">
+            <img src={logo} alt="Waterfront Cafe Bar Bistro" style={{ width: "100%" }} />
+          </Link>
+        </div>
         <h1 className={cls["header-heading"]}>Welcome to the Waterfront</h1>
         <div className={cls["header-nav"]}>
           {renderNav()}

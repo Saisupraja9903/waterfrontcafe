@@ -1,13 +1,14 @@
 import { contactDetails } from "../data/siteData";
 import FooterLinks from "./footer/FooterLinks";
 import FooterSocials from "./footer/FooterSocials";
+import styles from "./Footer.module.css";
 
 const Footer = () => (
   <footer className="footer">
     
     <div className="footer-content footer-responsive-layout">
       <div className="footer-col">
-        <h4>Contact Us</h4>
+        <h4 style={{ color: "white", fontWeight: "bold" }}>Contact Us</h4>
         <a href={`tel:${contactDetails.phoneHref}`}>{contactDetails.phone}</a>
         <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
         <address>
@@ -24,9 +25,9 @@ const Footer = () => (
       </div>
 
       <div className="footer-col footer-col-center">
-        <p><strong>Open Daily from 08:30 AM to 19:00 PM</strong></p>
-        <p>Breakfast Menu Served Until 1130 AM</p>
-        <p>Main Menu Served from 1130 AM</p>
+        <p><strong>Open Daily from 08:30AM to 19:00PM</strong></p>
+        <p>Breakfast Menu Served Until 11:30AM</p>
+        <p>Main Menu Served from 11:30AM</p>
         <p><strong>No booking required</strong></p>
         <FooterSocials />
       </div>
@@ -37,7 +38,7 @@ const Footer = () => (
         <p>Company No. 10265263</p>
         <FooterLinks />
         <p>ICO Registration No. ZB293769</p>
-        <p className="copyright">© 2024 The Waterfront Cafe. All Rights Reserved.</p>
+        <p className={styles.copyright}>© 2024 The Waterfront Cafe. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

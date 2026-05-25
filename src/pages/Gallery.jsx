@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { FiX, FiHeart, FiArrowUpRight } from "react-icons/fi";
 import SEO from "../components/SEO";
 import styles from "./Gallery.module.css";
+import "../responsive.css";
 
 import gallery1 from "../assets/gallery1.avif";
 import gallery2 from "../assets/gallery2.avif";
@@ -97,8 +98,8 @@ const Gallery = () => {
       </section>
 
       {active && (
-        <div className={styles.lightbox} onClick={() => setActive(null)}>
-          <button aria-label="Close gallery" className={styles.lightboxClose}>
+        <div className="lightbox" onClick={() => setActive(null)}>
+          <button aria-label="Close gallery">
             <FiX />
           </button>
           <img src={active} alt="Selected Waterfront Cafe gallery" />

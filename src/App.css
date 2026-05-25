@@ -863,69 +863,72 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* RESPONSIVE */
+/* =========================================
+   MENU PAGE RESPONSIVE LAYOUT
+   ========================================= */
+
+@media (max-width: 1024px) {
+  .menu-page {
+    padding: 50px 30px;
+  }
+  .menu-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .menu-heading {
+    margin-top: 0;
+  }
+  .menu-tabs {
+    margin-top: 0;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .menu-tabs button {
+    font-size: 1rem;
+    padding-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .menu-grid {
+    gap: 40px;
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 900px) {
-
- /* TOP */
-.menu-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  gap: 50px;
-
-  position: relative;
-}
-
-/* LEFT CONTENT SLIGHTLY DOWN */
-.menu-heading {
-  margin-top: 60px;
-}
-
-/* RIGHT TABS SLIGHTLY UP */
-.menu-tabs {
-  display: flex;
-
-  gap: 50px;
-
-  position: relative;
-
-  top: -15px;   /* moves BREAKFAST MAIN DRINKS UP */
-
-  right: 20px;
-}
-
-.menu-tabs button {
-  background: none;
-  border: none;
-
-  color: #083c5a;
-
-  font-size: 1rem;
-
-  cursor: pointer;
-
-  padding-bottom: 6px;
-
-  border-bottom: 3px solid transparent;
-
-  transition: 0.3s;
-
-  letter-spacing: 0.5px;
-}
-
-.menu-tabs button.active {
-  border-bottom: 3px solid #1f66ff;
-}
   .menu-grid {
     grid-template-columns: 1fr;
   }
+  .menu-heading h1 {
+    font-size: 2.2rem;
+  }
+  .menu-column h2 {
+    font-size: 1.6rem;
+  }
+  .menu-layout-column {
+    gap: 40px;
+  }
+}
 
+@media (max-width: 600px) {
+  .menu-page {
+    padding: 30px 15px;
+  }
+  .menu-top {
+    align-items: center;
+    text-align: center;
+  }
   .menu-heading h1 {
     font-size: 1.8rem;
   }
-
-  .menu-column h2 {
-    font-size: 1.5rem;
+  .menu-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menu-tabs button {
+    font-size: 0.95rem;
   }
 }
 /* TEXT AREA */
@@ -1112,6 +1115,8 @@ textarea {
   margin: 0 0 14px;
   font-family: var(--heading);
   font-size: 1.45rem;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .footer a,
@@ -1832,11 +1837,11 @@ textarea {
 }
 
 .footer-col-center .social-links a {
-  width: 58px;
-  height: 58px;
+  width: 44px;
+  height: 44px;
   background: transparent;
   color: rgba(183, 184, 224, 0.82);
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 
 .footer-col-center .social-links a:hover {

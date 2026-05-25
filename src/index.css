@@ -13,3 +13,37 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); }
+
+/* Responsive base styles */
+html {
+  font-size: 16px;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  width: 100%;
+  min-height: 60vh;
+}
+section {
+  width: 100%;
+  padding: 2rem 0;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+  section {
+    padding: 1.5rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  section {
+    padding: 1rem 0.25rem;
+  }
+}

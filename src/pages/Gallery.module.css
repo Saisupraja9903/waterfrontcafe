@@ -135,7 +135,7 @@
 
 @media (max-width: 768px) {
   .galleryGrid {
-    column-count: 3;
+    column-count: 2; /* Increased size by reducing to 2 columns on tablets */
     column-gap: 10px;
   }
 
@@ -144,16 +144,18 @@
   }
 
   .gallerySection {
-    width: calc(100% - 40px);
+    width: 100%;
+    padding: 60px 20px 80px; /* Override the desktop 100px padding */
   }
 }
 
 @media (max-width: 520px) {
   .galleryGrid {
-    column-count: 2;
+    column-count: 1; /* Increases mobile image size to full width */
   }
 
   .gallerySection {
-    width: calc(100% - 20px);
+    width: 100%;
+    padding: 40px 15px 60px; /* Reduced horizontal padding for maximum image size */
   }
 }

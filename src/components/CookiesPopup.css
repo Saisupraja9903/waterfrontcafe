@@ -82,3 +82,11 @@
 .legal-page h3{
    margin-top:25px;
 }
+
+/* Align popup items in a row on larger screens */
+@media (min-width: 768px) {
+  .cookies-popup-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
