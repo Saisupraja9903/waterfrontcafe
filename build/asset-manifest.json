@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b21235d.css",
+    "main.js": "/static/js/main.16d6ec0e.js",
+    "static/media/about4.avif": "/static/media/about4.85160cf5b2bc96f9eca5.avif",
+    "static/media/about2.avif": "/static/media/about2.687c4b50a5924ea748c7.avif",
+    "static/media/about1.avif": "/static/media/about1.796d84a7ba5493c1516c.avif",
+    "static/media/gallery11.avif": "/static/media/gallery11.49daac462b334bb1e50c.avif",
+    "static/media/gallery8.avif": "/static/media/gallery8.1639aae5111ddd096340.avif",
+    "static/media/gallery14.avif": "/static/media/gallery14.fab33bad56c76981debc.avif",
+    "static/media/gallery15.avif": "/static/media/gallery15.483bce73f3f9196e3722.avif",
+    "static/media/gallery3.avif": "/static/media/gallery3.93ecd0637cb4762c8af1.avif",
+    "static/media/gallery13.avif": "/static/media/gallery13.d9322f8e2ee6a2bc520e.avif",
+    "static/media/about3.avif": "/static/media/about3.81d013afb0084360cc73.avif",
+    "static/media/gallery2.avif": "/static/media/gallery2.6b3b40afb701d533334d.avif",
+    "static/media/gallery10.avif": "/static/media/gallery10.37f4d55b0c6c6f05fe56.avif",
+    "static/media/gallery6.avif": "/static/media/gallery6.b173b038d759e9accdf1.avif",
+    "static/media/gallery1.avif": "/static/media/gallery1.5a33c19369fd3b9480a6.avif",
+    "static/media/gallery18.avif": "/static/media/gallery18.1a780a9eefdd16cc731c.avif",
+    "static/media/gallery12.avif": "/static/media/gallery12.174b4153d8aab2811be1.avif",
+    "static/media/gallery19.avif": "/static/media/gallery19.f850a1aa15d56070eb39.avif",
+    "static/media/gallery7.avif": "/static/media/gallery7.96e85149cf48d951805c.avif",
+    "static/media/gallery16.avif": "/static/media/gallery16.f33f86fa1f306f76a0f1.avif",
+    "static/media/bghome.jpg": "/static/media/bghome.b79778a8407162d91384.jpg",
+    "static/media/gallery17.avif": "/static/media/gallery17.dd0ff32a1e3310efc0c9.avif",
+    "static/media/gallery4.avif": "/static/media/gallery4.2d195a1acf010692d745.avif",
+    "static/media/gallery5.avif": "/static/media/gallery5.8ab926c58df15877f3bb.avif",
+    "static/media/gallery9.avif": "/static/media/gallery9.74d41a5973e1d543ad4a.avif",
+    "static/media/water.avif": "/static/media/water.e57d1b80142db45515a8.avif",
+    "static/media/logo.png": "/static/media/logo.53dce6170a9e23c44493.png",
+    "index.html": "/index.html",
+    "main.3b21235d.css.map": "/static/css/main.3b21235d.css.map",
+    "main.16d6ec0e.js.map": "/static/js/main.16d6ec0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b21235d.css",
+    "static/js/main.16d6ec0e.js"
+  ]
+}
