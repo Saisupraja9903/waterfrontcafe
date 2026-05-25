@@ -1,54 +1,23 @@
+import bghome from "../assets/bghome.jpg";
+import Button from "./ui/Button";
+import SectionTitle from "./layout/SectionTitle";
+
 const AboutSection = () => (
-  <section className="about-section">
-
-    <div className="about-overlay" />
-
-    <div className="about-text">
-
-      <h3>
-        Discover the charming Waterfront Café,
-        nestled on the banks of the stunning
-        River Thames in Benson.
-      </h3>
-
+  <section className="about-section" id="welcome">
+    <div className="about-copy">
+      <SectionTitle
+        eyebrow="On the River Thames"
+        title="Discover the charming Waterfront Cafe in Benson"
+        text="Homemade specials, generous breakfasts, relaxed lunches, cakes made fresh daily and a deck made for watching the river drift by."
+      />
       <p>
-        This inviting venue serves mouth-watering menus
-        of delicious homemade specials, perfect for every
-        appetite and taste.
+        Little ones are welcomed with a varied children's menu, dogs are part of the family, and the Ben & Jerry's counter keeps the sweeter moments close at hand.
       </p>
-
-      <p>
-        Kickstart your day with a hearty breakfast,
-        indulge in a light lunch or feast from our main menu.
-      </p>
-
-      <p>
-        Little ones will love the varied children's menu
-        and our Ben & Jerry's counter, while furry friends
-        are warmly welcomed.
-      </p>
-
-      <p>
-        Enjoy breathtaking views from the large outside deck,
-        complete with ample seating and cozy seating areas.
-      </p>
-
-      <p>
-        Satisfy your sweet tooth with tempting cakes
-        made fresh daily.
-      </p>
-
-      <p>
-        Relax and unwind in this casual oasis where time
-        stops as you watch the world go by.
-      </p>
-
-      <a href="/menu" className="about-btn">
-        View Our Menus
-      </a>
-
+      <Button to="/about-us">Read more</Button>
     </div>
-
+    <div className="about-image">
+      <img src={bghome} alt="Waterfront Cafe food and riverside atmosphere" loading="lazy" />
+    </div>
   </section>
 );
 

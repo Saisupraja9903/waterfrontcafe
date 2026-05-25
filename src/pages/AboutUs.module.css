@@ -1,0 +1,147 @@
+/* Waterfront Café About Us Page - Premium, Clean, Dynamic, Responsive */
+
+.aboutUsRoot {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #eaf8fd 0%, #f6fcff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  min-height: 480px;
+  background: none;
+  padding: 0;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.textCol {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 56px 48px 56px 64px;
+  background: none;
+  min-width: 0;
+}
+
+.section.reverse .textCol {
+  padding: 56px 64px 56px 48px;
+}
+
+.heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0a3147;
+  margin-bottom: 28px;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+}
+
+.text {
+  font-size: 1.13rem;
+  color: #23455a;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.text u {
+  color: #0c4c67;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.imageCol {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  background: none;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,63,84,0.10);
+  margin: 32px 0;
+  background: #eaf8fd;
+}
+
+@media (max-width: 1100px) {
+  .textCol, .section.reverse .textCol {
+    padding: 36px 24px 36px 24px;
+  }
+  .image {
+    max-width: 420px;
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section, .section.reverse {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .textCol, .section.reverse .textCol {
+    padding: 28px 12px 18px 12px;
+    align-items: flex-start;
+  }
+  .imageCol {
+    justify-content: flex-start;
+    padding: 0 12px 24px 12px;
+  }
+  .image {
+    max-width: 100%;
+    max-height: 220px;
+    margin: 18px 0 0 0;
+  }
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+  .text {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutUsRoot {
+    padding: 0;
+  }
+  .textCol, .section.reverse .textCol {
+    padding: 18px 4vw 10px 4vw;
+  }
+  .imageCol {
+    padding: 0 4vw 18px 4vw;
+  }
+  .heading {
+    font-size: 1.13rem;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 0.97rem;
+    margin-bottom: 8px;
+  }
+}

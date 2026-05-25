@@ -1,0 +1,157 @@
+.pageShell {
+  background: #d8edf1;
+}
+
+.introSection {
+  padding: 48px 0 12px;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.introCard {
+  width: min(100%, 920px);
+  padding: 34px 38px;
+  background: rgba(255, 255, 255, 0.52);
+  border-radius: 26px;
+  box-shadow: 0 20px 50px rgba(8, 61, 86, 0.08);
+  text-align: center;
+}
+
+.introEyebrow {
+  margin: 0 0 14px;
+  color: #0a5f7a;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.introCard h2 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 3.2vw, 3.2rem);
+  color: #083d56;
+}
+
+.introCard p {
+  margin: 0 0 18px;
+  color: #285062;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.storyContainer {
+  display: grid;
+  gap: 26px;
+  padding: 18px 0 72px;
+}
+
+.storyBlock {
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 22px 60px rgba(8, 61, 86, 0.07);
+}
+
+.mutedBlock {
+  background: rgba(245, 252, 255, 0.7);
+}
+
+.storyLayout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.storyLayout.reverse {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.storyLayout.reverse .storyImageWrap {
+  order: 1;
+}
+
+.storyLayout.reverse .storyCopy {
+  order: 2;
+}
+
+.storyCopy h3 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  color: #083d56;
+}
+
+.storyCopy p {
+  margin: 0 0 18px;
+  color: #285062;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.sectionLabel {
+  margin: 0 0 8px;
+  color: #0a5f7a;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.storyImageWrap {
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 300px;
+}
+
+.storyImage {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.storyImageWrap:hover .storyImage {
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .storyLayout,
+  .storyLayout.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .storyLayout.reverse .storyImageWrap,
+  .storyLayout.reverse .storyCopy {
+    order: initial;
+  }
+
+  .storyBlock {
+    padding: 22px;
+  }
+
+  .introCard {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .introSection {
+    padding-top: 28px;
+  }
+
+  .storyContainer {
+    padding-bottom: 56px;
+  }
+
+  .storyImageWrap,
+  .storyImage {
+    min-height: 240px;
+  }
+}

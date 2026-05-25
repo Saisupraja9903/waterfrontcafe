@@ -1,0 +1,209 @@
+.pageShell {
+  background: #d8edf1;
+}
+
+.introSection {
+  padding: 48px 0 12px;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.introCard {
+  width: min(100%, 980px);
+  padding: 34px 38px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 28px;
+  box-shadow: 0 22px 60px rgba(8, 61, 86, 0.08);
+  text-align: center;
+}
+
+.introEyebrow {
+  margin: 0 0 14px;
+  color: #0a5f7a;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.introCard h2 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.3rem, 3vw, 3.1rem);
+  color: #083d56;
+}
+
+.introCard p {
+  margin: 0 0 18px;
+  color: #285062;
+  font-size: 1.06rem;
+  line-height: 1.95;
+}
+
+.storyContainer {
+  display: grid;
+  gap: 26px;
+  padding: 18px 0 70px;
+}
+
+.storyBlock,
+.sectionFive,
+.ctaCard,
+.socialCard {
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 22px 60px rgba(8, 61, 86, 0.07);
+}
+
+.storyLayout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.storyLayout.reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.storyLayout.reverse .storyImageWrap {
+  order: 1;
+}
+
+.storyLayout.reverse .storyCopy {
+  order: 2;
+}
+
+.storyCopy h3,
+.sectionFive h3,
+.ctaCard h3,
+.socialCard h3 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.85rem, 2.5vw, 2.45rem);
+  color: #083d56;
+}
+
+.storyCopy p,
+.sectionFive p,
+.ctaCard p,
+.socialCard p {
+  margin: 0;
+  color: #285062;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.sectionLabel {
+  margin: 0 0 8px;
+  color: #0a5f7a;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.storyImageWrap {
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 300px;
+}
+
+.storyImage {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.storyImageWrap:hover .storyImage {
+  transform: scale(1.03);
+}
+
+.ctaCard {
+  background: linear-gradient(135deg, rgba(241, 252, 255, 0.9), rgba(220, 246, 247, 0.88));
+  border: 1px solid rgba(10, 95, 122, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #083d56;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-1px);
+  background: #0d5f7a;
+}
+
+.socialCard {
+  background: rgba(244, 251, 254, 0.8);
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tagPill {
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: rgba(8, 61, 86, 0.08);
+  color: #083d56;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .storyLayout,
+  .storyLayout.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .storyLayout.reverse .storyImageWrap,
+  .storyLayout.reverse .storyCopy {
+    order: initial;
+  }
+
+  .storyBlock,
+  .sectionFive,
+  .ctaCard,
+  .socialCard {
+    padding: 22px;
+  }
+
+  .introCard {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .introSection {
+    padding-top: 28px;
+  }
+
+  .storyContainer {
+    padding-bottom: 56px;
+  }
+
+  .storyImageWrap,
+  .storyImage {
+    min-height: 240px;
+  }
+}

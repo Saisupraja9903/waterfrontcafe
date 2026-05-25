@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../responsive.css";
 
 // --- DUMMY CONTENT ARRAYS ---
 

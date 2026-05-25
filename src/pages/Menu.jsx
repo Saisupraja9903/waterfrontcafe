@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "../responsive.css";
 
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("breakfast");
@@ -871,7 +872,7 @@ Flapjack
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="menu-page">
 
