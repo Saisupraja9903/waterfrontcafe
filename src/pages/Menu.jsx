@@ -8,22 +8,27 @@ const breakfastMenu = {
 
     {
       title: "UPPER DECK BREAKFAST",
-      desc: "Two Bacon, Two Sausages, One Fried Egg & Beans, White Or Brown Toast",
+      desc: "Two Bacon, Two Sausages, One Fried Egg, One Hash Brown, Beans & White or Brown Toast",
+    },
+
+    {
+      title: "WATERFRONT BREAKFAST",
+      desc: "Two Bacon, Two Sausages, One Fried Egg, One Hash Brown, Portobello Mushroom Beans & White or Brown Toast",
     },
 
     {
       title: "VEGETARIAN BREAKFAST",
-      desc: "One Fried Egg, Two Hash Browns, Beans, Tomato & Portobello Mushroom, White Or Brown Toast",
+      desc: "One Fried Egg, Two Hash Browns, Beans, Tomato & Portobello Mushroom, White or Brown Toast",
     },
 
     {
       title: "VEGAN BREAKFAST",
-      desc: "Two Vegan Sausages, Two Hash Browns, Avocado, Portobello Mushroom, Grilled Tomato, White Or Brown Toast",
+      desc: "Two Vegan Sausages, Two Hash Browns, Avocado, Portobello Mushroom, Grilled Tomato, White or Brown Toast",
     },
 
    {
   title: "AMERICAN PANCAKE",
-  desc: "With Crispy Bacon & Maple Syrup\nWith Greek Yoghurt And Berries",
+  desc: "With Crispy Bacon & Maple Syrup £7.99\nWith Greek Yoghurt and Berries £7.99",
 },
 
    {
@@ -34,30 +39,19 @@ const breakfastMenu = {
 
     {
       title: "GREEK YOGHURT",
-      desc: "With Banana & Honey",
+      desc: "With Banana & Honey £4.99\nWith Granola & Berries £4.99",
     },
 
     {
-      title: "GREEK YOGHURT",
-      desc: "With Granola & Berries",
+      title: "TWO SLICES OF TOAST & MARMALADE £2.99",
     },
 
     {
-      title: "TWO SLICES OF TOAST & MARMALADE",
-      desc: "Vegan",
+      title: "TWO SLICES OF GLUTEN FREE TOAST & MARMALADE £2.99",
     },
 
     {
-      title: "TWO SLICES OF GLUTEN FREE TOAST & MARMALADE",
-      desc: "Gluten Free",
-    },
-
-    {
-      title: "TWO SLICES OF SOURDOUGH TOAST & MARMALADE",
-    },
-
-    {
-      title: "TOAST & BEANS (GFO)",
+      title: "TOAST & BEANS (GFO) £4.99",
     },
 
   {
@@ -68,32 +62,27 @@ const breakfastMenu = {
 
     {
       title: "EGGS BENEDICT (GFO)",
-      desc: "Served With Ham, Hollandaise Sauce And Toasted English Muffin",
+      desc: "Served With Ham, Avocado, Hollandaise Sauce and Toasted English Muffin",
     },
 
     {
       title: "EGG ROYALE (GFO)",
-      desc: "Served With Smoked Salmon, Hollandaise Sauce And Toasted English Muffin",
+      desc: "Served With Smoked Salmon, Avocado, Hollandaise Sauce and Toasted English Muffin",
     },
 
     {
       title: "OMELETTE",
-      desc: "Two Eggs Omelette With Two Toppings Served With Brown Or White Toast Add Toppings +£ Please Ask Choose From Ham, Cheese, Peppers, Mushroom, Onion & Bacon",
+      desc: "Two Eggs Omelette with Two Toppings Served with Brown or White Toast\nAdd Toppings +£0.50 Each\nChoose From Ham, Cheese, Peppers, Mushroom, Onion & Bacon, Green Chilli",
     },
 
     {
       title: "EGGS YOUR WAY WITH TOAST (GFO)",
-      desc: "Scrambled/Poached/Fried",
+      desc: "Scrambled/Poached/Fried £7.49",
     },
 
     {
       title: "AVOCADO, TOMATO & TWO EGGS",
-      desc: "Scrambled/Poached/Fried",
-    },
-
-    {
-      title: "AVOCADO, MUSHROOM & TWO EGGS",
-      desc: "Scrambled/Poached/Fried",
+      desc: "Scrambled/Poached/Fried £8.49",
     },
 
   ],
@@ -101,68 +90,83 @@ const breakfastMenu = {
   right: [
 
     {
-      title: "SAUSAGE OR BACON RUSTIC ROLL",
+      title: "SAUSAGE OR BACON RUSTIC ROLL £6.49",
     },
 
     {
-      title: "BACON & EGG RUSTIC ROLL",
+      title: "BACON & EGG RUSTIC ROLL £7.49",
     },
 
     {
-      title: "SAUSAGE & EGG RUSTIC ROLL",
+      title: "SAUSAGE & EGG RUSTIC ROLL £7.49",
     },
 
     {
-      title: "FRIED EGG RUSTIC ROLL",
+      title: "EGG RUSTIC ROLL £6.49",
     },
 
     {
-      title: "BLACK PUDDING",
+      title: "BREAKFAST WRAP £8.99",
+      desc: "Two fried eggs, sausage, bacon, hash browns and cheese with ketchup/brown sauce",
     },
 
     {
-      title: "BEANS",
+      title: "BREAKFAST EXTRAS",
+      highlight: true,
     },
 
     {
-      title: "HASH BROWN (ONE)",
+      title: "BLACK PUDDING £1.99",
     },
 
     {
-      title: "VEGAN SAUSAGE",
+      title: "BEANS £1.99",
     },
 
     {
-      title: "BACON",
+      title: "HASH BROWN (ONE) £1.49",
     },
 
     {
-      title: "SAUSAGE",
+      title: "VEGAN SAUSAGE £1.99",
     },
 
     {
-      title: "EGG",
+      title: "BACON £1.99",
     },
 
     {
-      title: "SCRAMBLED EGG",
+      title: "SAUSAGE £1.99",
     },
 
     {
-      title: "PORTOBELLO MUSHROOM",
+      title: "EGG £1.99",
     },
 
     {
-      title: "BACON ROLL",
+      title: "SCRAMBLED EGG £2.99",
     },
 
     {
-      title: "SAUSAGE ROLL",
+      title: "PORTOBELLO MUSHROOM £2.49",
+    },
+
+    {
+      title: "CHILDREN’S BREAKFAST",
+      highlight: true,
+    },
+
+    {
+      title: "BACON ROLL £3.49",
+    },
+
+    {
+      title: "SAUSAGE ROLL £3.49",
     },
 
     {
       title: "PANCAKES WITH BLUEBERRIES/BANANA & MAPLE SYRUP",
-      desc: "Add Greek Yoghurt £ Please Ask",
+      desc: "Add Greek Yoghurt £0.49",
     },
 
    {
@@ -172,43 +176,48 @@ const breakfastMenu = {
 },
 
     {
-      title: "BUTTER CROISSANT",
+      title: "BUTTER CROISSANT £2.69",
     },
 
     {
-      title: "ALMOND CROISSANT",
+      title: "ALMOND CROISSANT £3.69",
     },
 
     {
-      title: "CINNAMON SWIRL",
+      title: "CINNAMON SWIRL £3.29",
     },
 
     {
-      title: "PAIN-AU-CHOC",
+      title: "PAIN-AU-CHOC £2.69",
     },
 
     {
-      title: "PAIN-AU-RAISIN",
+      title: "PAIN-AU-RAISIN £3.29",
     },
 
     {
-      title: "PASTEL DE NATA",
+      title: "PASTEL DE NATA £2.29",
     },
 
     {
-      title: "COOKIES",
+      title: "COOKIES £2.69",
     },
 
     {
       title: "SCONES WITH",
       desc: `
-Butter
-Butter & Jam
-Jam & Clotted Cream
-Tea Cake (With Butter And Jam)
-Brownie
-Flapjack
+Butter £2.69
+Butter & Jam £3.29
+Jam & Clotted Cream £3.69
+Tea Cake (With Butter and Jam) £3.29
+Brownie £3.29
+Flapjack £3.29
       `,
+    },
+
+    {
+      title: "Additional Varieties",
+      desc: "Please Check Our Display Unit for Additional Cake and Pastry Varieties",
     },
 
   ],
@@ -218,160 +227,134 @@ Flapjack
 
     {
       title: "SMALL BITES",
-      desc: "Parmesan And Truffle Fries",
+      highlight: true,
+    },
+    {
+      title: "PARMESAN AND TRUFFLE FRIES £4.99",
+    },
+    {
+      title: "HOUSE CHIPS £3.49",
+      desc: "Add Seasoning (Curry, Peri Peri or Spicy) +£0.50",
+    },
+    {
+      title: "CHEESY CHIPS £4.49",
+    },
+    {
+      title: "BREADED HALLOUMI FRIES £4.49",
+    },
+    {
+      title: "MARINATED OLIVES (V,VG) £4.99",
+    },
+    {
+      title: "HUMMUS AND PITTA BREAD £5.99",
+    },
+    {
+      title: "ONION RINGS £3.49",
+    },
+    {
+      title: "Any 3 of the Above For £11.99",
     },
 
     {
-      title: "HOUSE CHIPS",
-      desc: "Add Flavour (Curry Or Spicy) +£ Please Ask",
+      title: "LIGHT BITES",
+      highlight: true,
     },
-
     {
-      title: "CHEESY CHIPS",
+      title: "GARLIC FLATBREAD £5.99",
+      desc: "With Caramelised Onions and Cheese",
     },
-
     {
-      title: "MIXED SALAD",
+      title: "SPRING ROLLS (2 PIECES) (VEG) £5.99",
     },
-
     {
-      title: "ONION RINGS",
+      title: "BUTTERMILK FRIED CHICKEN STRIPS (3 PIECES) £6.99",
     },
-
     {
-      title: "Any 3 Small Bites",
-      desc: "£ Please Ask",
-    },
-
-  {
-  title: "LIGHT BITES",
-  highlight: true,
-  desc: "When you want to keep it light, but satisfying",
-},
-
-    {
-      title: "GARLIC FLATBREAD",
-      desc: "With Caramelised Onions And Cheese",
-    },
-
-    {
-      title: "SPRING ROLLS (2 PIECES) (VEG)",
-    },
-
-    {
-      title: "SAMOSAS (2 PIECES) (VEG)",
-    },
-
-    {
-      title: "TEMPURA KING PRAWNS",
+      title: "TEMPURA KING PRAWNS £7.49",
       desc: "With Sweet Chilli Dipping Sauce",
     },
-
     {
-      title: "CHICKEN WINGS GLAZED WITH CHOICE OF YOUR SAUCE",
-      desc: "Choose One - Buffalo, BBQ, Teriyaki, Hot Spicy",
+      title: "CHICKEN WINGS £7.29",
+      desc: "Glazed With Choice Of Your Sauce\nChoose One - Buffalo, BBQ, Hot Honey, Hot Spicy",
     },
-
     {
-      title: "BREADED MOZZARELLA",
+      title: "BREADED MOZZARELLA STICKS £5.99",
       desc: "With Red Pepper Chilli Jam",
     },
-
     {
-      title: "GOAT’S CHEESE AND CARAMELISED ONION TARTLET",
+      title: "GOAT’S CHEESE AND CARAMELISED ONION TARTLET £7.49",
     },
-
     {
-      title: "HOMEMADE SOUP OF THE DAY",
+      title: "HOMEMADE SOUP OF THE DAY £5.99",
       desc: "Served With White/Brown/Gluten Free Roll",
     },
-
     {
-      title: "Any 3 Light Bites",
-      desc: "£ Please Ask",
+      title: "Any 3 of the Above For £15.99",
     },
 
     {
-      title: "NACHOS",
-      desc: "Tortilla Chips, Salsa, Jalapeno, Melted 3 Cheeses, Soured Cream & Guacamole",
+      title: "NACHOS (TORTILLA CHIPS)",
+      highlight: true,
+    },
+    {
+      title: "WATERFRONT NACHOS (NGCI, V) £10.99",
+      desc: "Salsa, Jalapeno Peppers, Melted Three Cheeses, Soured Cream & Guacamole\nAdd Chicken +£2.00",
+    },
+    {
+      title: "BEEF CHILLI NACHOS (NGCI) £12.99",
+      desc: "Melted Three Cheeses, Soured Cream & Guacamole",
+    },
+    {
+      title: "VEGETARIAN CHILLI NACHOS (V) £12.99",
+      desc: "Melted Three Cheeses, Soured Cream & Guacamole",
     },
 
     {
-      title: "WATERFRONT NACHOS (GFO, V)",
-      desc: "Standard / Add Beef Chilli / Add Chicken / Add Corn Veg Chilli Mince (V)",
+      title: "ITALIAN KITCHEN - PASTA",
+      highlight: true,
+      desc: "Choose From Penne (GFO), Spaghetti",
+    },
+    {
+      title: "BOLOGNESE £15.99",
+      desc: "Italian Traditional Minced Beef",
+    },
+    {
+      title: "ALFREDO £15.99",
+      desc: "Chicken In Creamy Mushroom Sauce",
+    },
+    {
+      title: "ARRABBIATA (V) £14.99",
+      desc: "Tomato Sauce, Garlic, Chilli",
+    },
+    {
+      title: "BEEF LASAGNE £16.99",
+      desc: "With Mixed Salad",
+    },
+    {
+      title: "CRAB AND KING PRAWN £18.99",
     },
 
     {
-      title: "INDIAN KITCHEN",
+      title: "ASIAN KITCHEN",
+      highlight: true,
       desc: "Served With Rice & Naan Bread",
     },
-
     {
-      title: "MILD CHICKEN CURRY",
+      title: "MILD CHICKEN CURRY £15.49",
+    },
+    {
+      title: "HOT CHICKEN CURRY £15.49",
     },
 
     {
-      title: "HOT CHICKEN CURRY",
+      title: "HOMEMADE CHILLI",
+      highlight: true,
     },
-
     {
-      title: "ITALIAN KITCHEN",
+      title: "HOMEMADE BEEF CHILLI WITH RICE £15.49",
     },
-
     {
-      title: "PIZZA 10” CHEESE & TOMATO",
-      desc: "Add Topping + £0.50 Each Mushroom, Onion, Peppers, Ham, Chicken, Pepperoni, Minced Beef, Sweetcorn, Jalapeno, Olives",
-    },
-
-    {
-      title: "PASTA - BOLOGNESE",
-      desc: "Italian Traditional Minced Beef Choose From Penne (GFO), Spaghetti, Linguine, Tagliatelle",
-    },
-
-    {
-      title: "PASTA - ALFREDO",
-      desc: "Chicken In Creamy Mushroom Sauce Choose From Penne (GFO), Spaghetti, Linguine, Tagliatelle",
-    },
-
-    {
-      title: "PASTA - ARRABBIATA (V)",
-      desc: "Tomato Sauce, Garlic, Chilli Choose From Penne (GFO), Spaghetti, Linguine, Tagliatelle",
-    },
-
-    {
-      title: "PASTA - BEEF LASAGNE",
-      desc: "With Mixed Salad Choose From Penne (GFO), Spaghetti, Linguine, Tagliatelle",
-    },
-
-    {
-      title: "SALADS",
-    },
-
-    {
-      title: "CHICKEN CEASAR SALAD",
-      desc: "With Baby Gem, Bacon, Parmesan, Tomatoes, Cucumber, Croutons & Caesar Dressing",
-    },
-
-    {
-      title: "WARM GOAT CHEESE SALAD (GFO) (V)",
-      desc: "With Beetroot, Tomato, Cucumber, Walnuts & Mixed Leaves. Drizzled with Walnut Oil",
-    },
-
-    {
-      title: "PRAWN & SMOKED SALMON SALAD (GFO)",
-      desc: "With Tomato, Cucumber, Mixed Leaves With a Dill & Lime Mayonnaise",
-    },
-
-    {
-      title: "HOMEMADE MINCE CHILLI",
-    },
-
-    {
-      title: "HOMEMADE BEEF CHILLI WITH BASMATI RICE",
-    },
-
-    {
-      title: "HOMEMADE VEGETARIAN CHILLI WITH BASMATI RICE (V) (VEG)",
+      title: "HOMEMADE VEGETARIAN CHILLI WITH RICE (V) (VEG) £15.49",
     },
 
   ],
@@ -380,190 +363,206 @@ Flapjack
 
     {
       title: "MEAT & FISH",
+      highlight: true,
     },
-
     {
-      title: "FISHCAKES OF THE DAY",
+      title: "FISHCAKES OF THE DAY £14.99",
       desc: "Mixed Salad, Sweet Chilli Sauce",
     },
-
     {
-      title: "GARLIC & BUTTER PRAWNS",
-      desc: "Served With Rustic Roll",
-    },
-
-    {
-      title: "GAMMON STEAK (GFO)",
+      title: "GAMMON STEAK (GFO) £17.99",
       desc: "Egg & Chips",
     },
-
     {
-      title: "HOMEMADE BEER BATTERED COD FILLET",
-      desc: "Chips, Mushy Peas & Tartare Sauce",
+      title: "FISH AND CHIPS £16.49",
+      desc: "Cod, Chips, Mushy Peas & Tartare Sauce",
     },
-
     {
-      title: "SIRLOIN STEAK 10OZ",
+      title: "PAN FRIED SUPREME OF SALMON £18.99",
+      desc: "Warm New Potato, Green Beans, Cherry Tomatoes, Rocket, Parmesan Salad & Hollandaise Sauce",
+    },
+    {
+      title: "SIRLOIN STEAK 10OZ £24.99",
       desc: "Mixed Salad, Portobello Mushroom, Roasted Tomato, Chips, Peppercorn Sauce",
     },
-
     {
-      title: "WATERFRONT CHARGRILLED CHICKEN",
+      title: "WATERFRONT CHARGRILLED CHICKEN £20.99",
       desc: "(Most Bones Removed), Coleslaw, Chips & Garnish With Honey Mustard (Other Sauce Option Available)",
+    },
+    {
+      title: "BREADED SCAMPI WITH CHIPS £16.49",
+      desc: "Served with chips, mixed salad, and tartare sauce",
     },
 
     {
       title: "WATERFRONT BURGERS",
+      highlight: true,
       desc: "Served In A Soft Potato Brioche Roll With Chips",
     },
-
     {
-      title: "PLANT-BASED BURGER (GFO)",
+      title: "PLANT-BASED BURGER (GFO) £15.49",
+    },
+    {
+      title: "6OZ HOMEMADE BEEF BURGER £14.99",
+      desc: "Add Extra 6oz Beef Patty +£2.99",
+    },
+    {
+      title: "CHICKEN BURGER (GFO) £14.99",
+    },
+    {
+      title: "POSH FISH BURGER (TARTAR SAUCE) £14.99",
     },
 
     {
-      title: "6OZ HOMEMADE BEEF BURGER",
-      desc: "Add Extra 6oz Beef Patty +£ Please Ask",
+      title: "SALADS",
+      highlight: true,
+    },
+    {
+      title: "CHICKEN CAESAR SALAD £15.49",
+      desc: "With Baby Gem, Bacon, Parmesan, Tomatoes, Cucumber, Croutons & Caesar Dressing",
+    },
+    {
+      title: "WARM GOAT CHEESE SALAD (GFO) (V) £15.99",
+      desc: "With Beetroot, Tomato, Cucumber, Walnuts & Mixed Leaves. Drizzled with Walnut Oil",
+    },
+    {
+      title: "PRAWN & SMOKED SALMON SALAD (GFO) £16.99",
+      desc: "With Tomato, Cucumber, Mixed Leaves With a Dill & Lime Mayonnaise",
+    },
+    {
+      title: "CHEF JOE'S SPECIAL VEGAN SALAD £16.99",
+      desc: "Lettuce, Rocket, Chicory, Green Beans, Cherry Tomatoes, Carrot, Cucumber, Beets, Radish, Sweet Potato, Quinoa, Pumpkin Seeds, Tofu & House Dressing",
     },
 
     {
-      title: "CHICKEN BURGER (GFO)",
+      title: "BAGUETTES",
+      highlight: true,
+      desc: "Served With Chips",
     },
-
     {
-      title: "POSH FISH BURGER (TARTAR SAUCE)",
+      title: "CHICKEN MAYONNAISE & SALAD £12.99",
     },
-
     {
-      title: "TOASTED SOURDOUGH SANDWICHES",
+      title: "TUNA MAYONNAISE & CUCUMBER £12.99",
     },
-
     {
-      title: "WILTSHIRE HAM & MATURE CHEDDAR CHEESE",
+      title: "CHEESE & SALAD £12.99",
     },
-
     {
-      title: "BRIE, BACON & CRANBERRY",
+      title: "HAM & SALAD £12.99",
     },
-
     {
-      title: "MOZZARELLA, TOMATO & PESTO (V)",
+      title: "HOUMOUS & SALAD £12.99",
     },
 
     {
       title: "SPECIALITY RUSTIC ROLLS",
+      highlight: true,
       desc: "Served With Chips",
     },
-
     {
-      title: "CHICKEN, AVOCADO & TOMATO FILLED ROLL",
+      title: "CHICKEN, AVOCADO & TOMATO FILLED ROLL £10.99",
+    },
+    {
+      title: "HAM & CHEESE WITH TOMATO & ONION CHUTNEY £9.99",
+    },
+    {
+      title: "HOUMOUS, PIQUILLO PEPPERS, MIXED LEAVES & TOMATO (VEG) £8.99",
     },
 
     {
-      title: "WILTSHIRE HAM & CHEDDAR CHEESE, TOMATO & ONION CHUTNEY",
+      title: "SOURDOUGH TOASTIES",
+      highlight: true,
+    },
+    {
+      title: "WILTSHIRE HAM & MATURE CHEDDAR CHEESE £7.99",
+    },
+    {
+      title: "BRIE, BACON & CRANBERRY £7.99",
+    },
+    {
+      title: "MOZZARELLA, TOMATO & PESTO (V) £6.99",
     },
 
     {
-      title: "HOUMOUS, PIQUILLO PEPPERS, MIXED LEAVES & TOMATO (VEG)",
+      title: "WRAPS",
+      highlight: true,
+      desc: "Served With Chips",
     },
-
     {
-      title: "WRAPS (SERVED WITH CHIPS)",
+      title: "FAJITA WRAP £13.99",
+      desc: "Cajun Chicken, Lettuce, Tomato and Cajun",
     },
-
     {
-      title: "FAJITA WRAP",
-      desc: "Cajun Chicken, Lettuce, Tomato & Sour Cream",
+      title: "CAESAR WRAP £13.99",
+      desc: "Grilled Chicken, Lettuce, Crispy Bacon, Parmesan, Lettuce and Caesar Dressing",
     },
-
     {
-      title: "CAESAR WRAP",
-      desc: "Grilled Chicken, Lettuce, Sun-Dried Tomatoes, Parmesan, Rocket & Caesar Dressing",
-    },
-
-    {
-      title: "CONZALES WRAP",
-      desc: "Lettuce, Tomato, Bacon, Feta Cheese And Sour Cream",
-    },
-
-    {
-      title: "FALAFEL WRAP (VEG)",
+      title: "FALAFEL WRAP (VEG) £13.49",
       desc: "Falafels, Hummus, Lettuce, Sun-Dried Tomatoes, Caramelised Onion",
+    },
+    {
+      title: "BBQ WRAP £13.99",
+      desc: "Grilled chicken, lettuce, Bacon, and Tomato with BBQ Sauce",
     },
 
     {
       title: "CHILDREN’S MENU",
+      highlight: true,
     },
-
     {
-      title: "CHICKEN GOUJONS",
+      title: "CHICKEN GOUJONS £5.49",
     },
-
     {
-      title: "BATTERED FISH & CHIPS",
+      title: "BATTERED FISH & CHIPS £6.99",
     },
-
     {
-      title: "CLASSIC BEEF BURGER",
+      title: "CLASSIC BEEF BURGER £6.99",
+      desc: "Served With Your Choice of Chunky Chips, Skinny Fries or Rice",
     },
-
     {
-      title: "SEARED SALMON & PEAS",
-      desc: "Served With Your Choice Of Chunky Chips, Skinny Fries, Mashed Potato Or Rice",
+      title: "PASTA WITH TOMATO SAUCE & CHEESE (GFO) £6.49",
     },
-
     {
-      title: "PASTA WITH HOMEMADE TOMATO & CHEESE (GFO)",
+      title: "HAM, EGG & CHIPS (GFO) £5.99",
     },
-
     {
-      title: "SAUSAGE, MASH & GRAVY",
+      title: "LUNCH BAG (HAM & CHEESE) £6.99",
     },
-
     {
-      title: "HAM, EGG & CHIPS (GFO)",
+      title: "CHEESE PIZZA £6.99",
     },
-
     {
-      title: "KIDS LUNCH BAG (HAM & CHEESE)",
-    },
-
-    {
-      title: "CHEESE PIZZA",
-    },
-
-    {
-      title: "KIDS HAM & CHEESE PIZZA",
+      title: "HAM & CHEESE PIZZA £7.99",
     },
 
     {
       title: "DESSERTS",
+      highlight: true,
     },
-
     {
-      title: "BELGIAN WAFFLE 🧇",
-      desc: "With Banana 🍌 Ice Cream 🍨 & Chocolate 🍫 Sauce",
+      title: "BELGIAN WAFFLE £6.99",
+      desc: "With Banana, Ice Cream & Chocolate Sauce",
     },
-
     {
-      title: "TREACLE SPONGE 🍰 (GFO)",
+      title: "TREACLE SPONGE (GFO) £6.99",
     },
-
     {
-      title: "CHEESECAKE OF THE DAY 🍰",
+      title: "CHEESECAKE OF THE DAY £6.99",
     },
-
     {
-      title: "APPLE CRUMBLE",
+      title: "CHOCOLATE FONDANT CAKE £6.99",
     },
-
     {
-      title: "MIXED BERRY ETON MESS",
+      title: "MIXED BERRY ETON MESS £6.99",
     },
-
     {
-      title: "CHOICE OF ICE CREAMS FROM BEN & JERRY’S COUNTER",
-      desc: "Wide range of cup or cone flavours from our exclusive Ben & Jerry's Counter",
+      title: "STICKY TOFFEE PUDDING £6.99",
+      desc: "With Vanilla Ice Cream, Toffee Sauce",
+    },
+    {
+      title: "VANILLA ESPRESSO £5.99",
+      desc: "Two Scoops Vanilla Ice Cream & Single Shot of Espresso",
     },
 
   ],
@@ -861,12 +860,113 @@ Flapjack
 
   ],
 };
+ const pizzaMenu = {
+  left: [
+    {
+      desc: "FRESHLY COOKED 12” PIZZA ON A CLASSIC ITALIAN BASE, LAYERED WITH OUR SIGNATURE TOMATO SAUCE",
+      boldDesc: true,
+    },
+    {
+      title: "THAMES CLASSIC £11.99",
+      desc: "Seasoning Mozzarella, fresh basil leaves, and extra virgin olive oil (chilli flakes – optional)",
+    },
+    {
+      title: "BENSON BLAZE £14.99",
+      desc: "Mozzarella and Pepperoni",
+    },
+    {
+      title: "RIVERSIDE ROASTER £15.99",
+      desc: "Mozzarella, tender chicken breast, pepper, onion, mushroom",
+    },
+    {
+      title: "TANDOORI CRUISER £15.99",
+      desc: "Mozzarella, Tandoori chicken breast, onion, fresh chillies, jalapenos",
+    },
+    {
+      title: "HAM & PINEAPPLE £14.99",
+      desc: "Mozzarella, ham and pineapple",
+    },
+    {
+      title: "BENSON GARDEN £14.99",
+      desc: "Mozzarella, mushroom, peppers, onion and sweetcorn",
+    },
+    {
+      title: "RIVERSIDE VEGAN £14.99",
+      desc: "Plant-based cheese, mushroom, peppers, onion and sweetcorn",
+    },
+    {
+      title: "SPICY SQUADRON £17.99",
+      desc: "Mozzarella, Cajun spiced chicken, red onions, cherry tomato, peppers and garnished with chilli flakes",
+    },
+    {
+      title: "EXTRA TOPPINGS",
+      highlight: true,
+    },
+    {
+      title: "£2.99 Each for extra",
+      desc: "Ham, Pepperoni, Chicken, Ground beef",
+    },
+    {
+      title: "£1.49 Each for extra",
+      desc: "Peppers, Onions, Tomatoes, Mushrooms, Fresh Chillies, Jalapenos, Pineapple",
+    },
+  ],
+  right: [
+    {
+      desc: "We believe great pizza starts with the perfect bake.\nThat’s why we use a state-of-the-art electric pizza oven inspired by centuries of Italian tradition but designed for today’s world.\nCrafted for precision and efficiency, our oven delivers exceptional flavour, texture, and consistency every visit.\nHere’s why our pizzas taste so incredible:",
+      boldDesc: true,
+    },
+    { title: "Authentic Italian Flavour, Every Time", desc: "Our oven, imported from Italy, reaches a perfect 500°C, ensuring a beautifully crisp base with that signature golden crust. The high heat caramelises toppings to perfection, melting the cheese into a decadent, bubbling delight—just as you’d find in the pizzerias of Naples." },
+    { title: "Unbeatable Consistency", desc: "Thanks to innovative Air Trap System® technology, the heat stays locked inside the oven, guaranteeing perfect, even cooking from edge to centre. Every pizza we serve is flawlessly baked, with no soggy middles or uneven crusts - just deliciousness in every bite." },
+    { title: "Sustainably Baked, 100% Wood-Free", desc: "Our electric oven is completely wood-free, making it an eco-friendly choice that reduces waste without compromising taste. It uses up to 30% less energy than traditional ovens, allowing you to enjoy your pizza with confidence, knowing it’s made with sustainability in mind." },
+    { title: "Experience the Difference", desc: "At Waterfront Cafe, we combine the best of tradition and technology to bring you genuinely exceptional pizza.\nWhether you love a classic Margherita or something more adventurous, our expertly baked pizzas are a taste experience." },
+    { title: "Recognised by the True Neapolitan Pizza Association (AVPN)", desc: "Our Zanolli pizza oven meets the standards of the Associazione Verace Pizza Napoletana (AVPN), the global authority on authentic Neapolitan pizza.\nThis means every pizza we serve stays true to Italian traditions, bringing a slice of Naples to your table." },
+  ],
+};
   const currentMenu =
     activeTab === "breakfast"
       ? breakfastMenu
       : activeTab === "main"
       ? mainMenu
+      : activeTab === "pizza"
+      ? pizzaMenu
       : drinksMenu;
+
+  const renderTitle = (title) => {
+    if (!title) return null;
+    const priceRegex = /(.*?)\s+(£\d+(?:\.\d{2})?)\s*$/;
+    const match = title.match(priceRegex);
+    if (match) {
+      return (
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
+          <span>{match[1]}</span>
+          <span>{match[2]}</span>
+        </div>
+      );
+    }
+    return <span>{title}</span>;
+  };
+
+  const renderDesc = (desc, isBold) => {
+    if (!desc) return null;
+    return (
+      <div className={isBold ? "bold-desc" : ""} style={{ marginTop: "4px" }}>
+        {desc.split('\n').map((line, i) => {
+          const priceRegex = /(.*?)\s+(£\d+(?:\.\d{2})?)\s*$/;
+          const match = line.match(priceRegex);
+          if (match) {
+            return (
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
+                <span>{match[1]}</span>
+                <span>{match[2]}</span>
+              </div>
+            );
+          }
+          return <div key={i}>{line}</div>;
+        })}
+      </div>
+    );
+  };
 
   return (
     <>
@@ -883,16 +983,22 @@ Flapjack
                 ? "BREAKFAST MENU"
                 : activeTab === "main"
                 ? "MAIN MENU"
+                : activeTab === "pizza"
+                ? "PIZZA MENU"
                 : "DRINKS MENU"}
             </h1>
 
             <p>
-              "Dawn's First Light, Benson's First Bite – Waterfront Mornings".
+              {activeTab === "main" || activeTab === "pizza" ? '"ARRIVE AS A GUEST | LEAVE AS A FRIEND | COME BACK AS FAMILY"' : '"Dawn\'s First Light, Benson\'s First Bite – Waterfront Mornings".'}
             </p>
 
-            <h4>Served from 08:30 am to 11:30 am</h4>
+            <h4>
+              {activeTab === "main" ? "MAINS SERVED FROM 11:30 AM" : activeTab === "pizza" ? "PIZZA SERVED FROM 11:30 AM to 18:30 PM" : "Served from 08:30 am to 11:30 am"}
+            </h4>
 
-            <h4>GFO – Gluten Free Option Available Upon Request</h4>
+            <h4>
+              {activeTab === "main" ? "V - Vegetarian, VEG - Vegan, GFO - Gluten-Free Options Available Upon Request." : activeTab === "pizza" ? "GFO – Gluten-Free Option Available Upon Request" : "GFO – Gluten Free Option Available Upon Request"}
+            </h4>
 
             <h4>
               Please Speak To A Staff Member Regarding Dietary Or Allergen
@@ -918,6 +1024,13 @@ Flapjack
             </button>
 
             <button
+              className={activeTab === "pizza" ? "active" : ""}
+              onClick={() => setActiveTab("pizza")}
+            >
+              PIZZA MENU
+            </button>
+
+            <button
               className={activeTab === "drinks" ? "active" : ""}
               onClick={() => setActiveTab("drinks")}
             >
@@ -933,7 +1046,13 @@ Flapjack
           {/* LEFT */}
           <div className="menu-column">
 
-            <h2>SPECIALS</h2>
+            <h2>
+              {activeTab === "main"
+                ? "STARTERS & BITES"
+                : activeTab === "pizza"
+                ? "ITALIAN PIZZA"
+                : "SPECIALS"}
+            </h2>
 
             {currentMenu.left.map((item, index) => (
               <div
@@ -943,14 +1062,9 @@ Flapjack
   `}
   key={index}
 >               <h3 className={item.highlight ? "menu-highlight" : ""}>
-  {item.title}
-</h3>
-                <p
-  className={item.boldDesc ? "bold-desc" : ""}
-  style={{ whiteSpace: "pre-line" }}
->
-  {item.desc}
-</p>
+                  {renderTitle(item.title)}
+                </h3>
+                {item.desc && renderDesc(item.desc, item.boldDesc)}
               </div>
             ))}
           </div>
@@ -962,7 +1076,9 @@ Flapjack
               {activeTab === "breakfast"
                 ? "BREAKFAST ROLLS"
                 : activeTab === "main"
-                ? "CHEF SPECIALS"
+                ? "MAINS & GRILL"
+                : activeTab === "pizza"
+                ? "THE PERFECT BAKE"
                 : "COLD DRINKS"}
             </h2>
 
@@ -974,9 +1090,9 @@ Flapjack
   `}
   key={index}
 >               <h3 className={item.highlight ? "menu-highlight" : ""}>
-  {item.title}
-</h3>
-                {item.desc && <p>{item.desc}</p>}
+                  {renderTitle(item.title)}
+                </h3>
+                {item.desc && renderDesc(item.desc, item.boldDesc)}
               </div>
             ))}
           </div>

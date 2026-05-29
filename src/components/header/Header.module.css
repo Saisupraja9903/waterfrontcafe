@@ -288,7 +288,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--header-bg);
   z-index: 4000;
@@ -319,6 +319,10 @@
   outline: none;
   cursor: pointer;
   transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .mobile-nav-link.active,
@@ -328,16 +332,16 @@
 }
 
 .mobile-dropdown {
-  width: 100vw;
+  width: 100%;
   background: var(--dropdown-bg);
   backdrop-filter: blur(12px);
   box-shadow: var(--dropdown-shadow);
   border-radius: 0 0 18px 18px;
-  padding: 28px 48px 28px 0;
+  padding: 28px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: flex-end;
+  align-items: center;
   opacity: 1;
   transition: max-height 0.35s cubic-bezier(0.22,1,0.36,1);
   max-height: 600px;
@@ -362,6 +366,7 @@
   outline: none;
   cursor: pointer;
   display: block;
+  text-align: center;
 }
 
 .mobile-dropdown-link:hover,

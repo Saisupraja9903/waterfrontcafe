@@ -115,6 +115,9 @@ HEADER SECTION
   color: #0c2b42;
   font-weight: 600;
   font-size: 1.15rem;
+  min-width: 70px;
+  text-align: right;
+  margin-left: 16px;
 }
 
 .menu-item-desc {
