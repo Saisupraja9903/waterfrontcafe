@@ -938,10 +938,7 @@ Flapjack £3.29
     const match = title.match(priceRegex);
     if (match) {
       return (
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
-          <span>{match[1]}</span>
-          <span>{match[2]}</span>
-        </div>
+        <span>{match[1]}</span>
       );
     }
     return <span>{title}</span>;
@@ -956,10 +953,7 @@ Flapjack £3.29
           const match = line.match(priceRegex);
           if (match) {
             return (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
-                <span>{match[1]}</span>
-                <span>{match[2]}</span>
-              </div>
+              <div key={i}>{match[1]}</div>
             );
           }
           return <div key={i}>{line}</div>;

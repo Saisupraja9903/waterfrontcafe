@@ -398,10 +398,7 @@ const MenuPage = () => {
           const match = line.match(priceRegex);
           if (match) {
             return (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
-                <span>{match[1]}</span>
-                <span>{match[2]}</span>
-              </div>
+              <div key={i}>{match[1]}</div>
             );
           }
           return <div key={i}>{line}</div>;
@@ -462,9 +459,8 @@ const MenuPage = () => {
                   <div className="menu-items-list">
                     {section.items.map((item, i) => (
                       <div key={i} className="menu-item-card">
-                        <div className="menu-item-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
+                        <div className="menu-item-header">
                           <span className="menu-item-name">{item.name}</span>
-                          {item.price && <span className="menu-item-price">{item.price}</span>}
                         </div>
                         {item.desc && renderDesc(item.desc)}
                       </div>
@@ -483,9 +479,8 @@ const MenuPage = () => {
                   <div className="menu-items-list">
                     {section.items.map((item, i) => (
                       <div key={i} className="menu-item-card">
-                        <div className="menu-item-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", width: "100%" }}>
+                        <div className="menu-item-header">
                           <span className="menu-item-name">{item.name}</span>
-                          {item.price && <span className="menu-item-price">{item.price}</span>}
                         </div>
                         {item.desc && renderDesc(item.desc)}
                       </div>
